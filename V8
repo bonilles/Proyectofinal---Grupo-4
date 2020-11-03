@@ -108,10 +108,10 @@ SubAlgoritmo Agregado <- AgregarContacto (ArregloValidarContacto, EspacioDisponi
 	DatosCompletos <- SolicitarDatosContacto (DatosContacto);
 	Regresar <- ValidarContacto (agenda, DatosContacto, ArregloValidarContacto, volver, principal, EspacioDisponible, datoscompletos, Disponible);
 	
-	Si ArregloValidarContacto[0,0]=0 //y ArregloValidarContacto[0,1]=0
+	Si ArregloValidarContacto[0,0]=0 y ArregloValidarContacto[0,1]=0
 		Disponible <- PocisionVacia (agenda, datoscontacto, EspacioDisponible);
 		si EspacioDisponible[0]=0 Entonces				
-			imprimir "No hay espacio disponible en la agenda, inte otra acción";
+			imprimir "No hay espacio disponible en la agenda.";
 			AccionesAgenda <- MenuAcciones (ArregloValidarContacto, EspacioDisponible, Volver, DatosCompletos, DatosContacto, Regresar, agenda, principal, Disponible, AccionesAgenda, cerrar, agregado );
 			
 		FinSi
